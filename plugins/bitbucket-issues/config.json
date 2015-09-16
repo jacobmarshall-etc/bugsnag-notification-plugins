@@ -9,15 +9,9 @@
   "type": "issueTracker",
   "fields": [
     {
-      "name": "username",
-      "label": "Username",
-      "description": "Your Bitbucket username",
-      "section": "authentication"
-    },
-    {
-      "name": "password",
-      "label": "Password",
-      "description": "Your Bitbucket password",
+      "name": "accessToken",
+      "label": "OAuth Access Token",
+      "description": "Your Bitbucket Access Token",
       "type": "password",
       "section": "authentication"
     },

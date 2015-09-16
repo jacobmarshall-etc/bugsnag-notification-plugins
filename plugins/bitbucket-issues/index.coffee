@@ -17,7 +17,7 @@ class BitbucketIssue extends NotificationPlugin
   @bitbucketRequest: (req, config) ->
     req
       .timeout(4000)
-      .auth(config.username, config.password)
+      .set('Authorization', 'Bearer ' + config.accessToken)
       .set('Accept', 'application/json')
 
   @ensureIssueOpen: (config, issueId, callback) ->
